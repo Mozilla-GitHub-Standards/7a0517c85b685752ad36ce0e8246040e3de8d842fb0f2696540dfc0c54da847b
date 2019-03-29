@@ -2,7 +2,7 @@
 # See more at: https://github.com/garbas/pypi2nix
 #
 # COMMAND:
-#   pypi2nix -v -C /app/src/codecoverage/backend/../../../tmp/pypi2nix -V 3.7 -O ../../../nix/requirements_override.nix -s intreehooks -s flit -s vcversioner -s pytest-runner -s setuptools-scm -r requirements.txt -r requirements-dev.txt
+#   pypi2nix -v -C /tmp/release-services-ay8nrcc0/src/codecoverage/backend/../../../tmp/pypi2nix -V 3.7 -O ../../../nix/requirements_override.nix -s intreehooks -s flit -s vcversioner -s pytest-runner -s setuptools-scm -r requirements.txt -r requirements-dev.txt
 #
 
 { pkgs ? import <nixpkgs> {},
@@ -602,10 +602,10 @@ let
     };
 
     "boto3" = python.mkDerivation {
-      name = "boto3-1.9.120";
+      name = "boto3-1.9.123";
       src = pkgs.fetchurl {
-        url = "https://files.pythonhosted.org/packages/1e/d0/93a6b181d39e8f161f4ee5bc6cb3b5e465bf655869607d502eb493811d50/boto3-1.9.120.tar.gz";
-        sha256 = "39e9b6516a72864f5a6b69f38edac087cc4ba623095f4528b916620e63de32b3";
+        url = "https://files.pythonhosted.org/packages/6f/5a/0cfdef6f69a32287f11d92fa6054c49b2c98e0e4412a0a9181544d0fd7ef/boto3-1.9.123.tar.gz";
+        sha256 = "2e527686a72ff5fed8275e897df63fadbdca6d4d47f651d898dee89ba9b9eb4d";
       };
       doCheck = commonDoCheck;
       checkPhase = "";
@@ -624,10 +624,10 @@ let
     };
 
     "botocore" = python.mkDerivation {
-      name = "botocore-1.12.120";
+      name = "botocore-1.12.123";
       src = pkgs.fetchurl {
-        url = "https://files.pythonhosted.org/packages/e7/ec/54541b6d432d76df6b92d777de8f15c2251d075a7a59cee1c280be929ec5/botocore-1.12.120.tar.gz";
-        sha256 = "c0f9c57e7a8c65f17a62a0926c3e73686f6ae1c08abf3b5a63cc3a5bcc4c437b";
+        url = "https://files.pythonhosted.org/packages/c1/88/8811cf71a9a45c1ba4c54e8bccb5c863b905e6765af40354b441b62fb2f6/botocore-1.12.123.tar.gz";
+        sha256 = "7982ab3b3da1f7f2f23f0a12fbd34fe8efc514b53bbe61b536a61884a51db25c";
       };
       doCheck = commonDoCheck;
       checkPhase = "";
@@ -818,10 +818,10 @@ let
     };
 
     "datadog" = python.mkDerivation {
-      name = "datadog-0.27.0";
+      name = "datadog-0.28.0";
       src = pkgs.fetchurl {
-        url = "https://files.pythonhosted.org/packages/4a/98/6a6120bb29e1039522ae2e64c2c6d83764fba3ec769eed654766e262c989/datadog-0.27.0.tar.gz";
-        sha256 = "9487480fd4b5898b665384f95eeb0cbca4ec998bb58224b7bb60fff3978191ad";
+        url = "https://files.pythonhosted.org/packages/70/50/6f90305b44fa544656a4784d208caff3883498dfddae2ff4f0dcf17354f6/datadog-0.28.0.tar.gz";
+        sha256 = "eb6f2707151be8851f7da3768e605ac92ec45464fc48d5a878d0b6e08610dd8b";
       };
       doCheck = commonDoCheck;
       checkPhase = "";
@@ -1500,10 +1500,10 @@ let
     };
 
     "more-itertools" = python.mkDerivation {
-      name = "more-itertools-6.0.0";
+      name = "more-itertools-7.0.0";
       src = pkgs.fetchurl {
-        url = "https://files.pythonhosted.org/packages/dd/f4/cdfbb6f07f767e0cd8a11b16adfecc735b6eb87dbebda026ce8898e1cc22/more-itertools-6.0.0.tar.gz";
-        sha256 = "590044e3942351a1bdb1de960b739ff4ce277960f2425ad4509446dbace8d9d1";
+        url = "https://files.pythonhosted.org/packages/29/ed/3a85eb4afdce6dc33e78dad885e17c678db8055bf65353e0de4944c72a40/more-itertools-7.0.0.tar.gz";
+        sha256 = "c3e4748ba1aad8dba30a4886b0b1a2004f9a863837b8654e7059eebf727afa5a";
       };
       doCheck = commonDoCheck;
       checkPhase = "";
